@@ -11,7 +11,7 @@
  	method esMasReciente(unaFecha){
  		return fecha < unaFecha
  	}
- 	method problemaCon(unPersonaje){
+ 	method problemaCon(alguien){
  		descripcion = "BTTF " + descripcion
  	}
  }
@@ -24,9 +24,10 @@
  	override method esDe(alguien){
  		return personajes.contains(alguien)
  	}
- 	override method problemaCon(unPersonaje){
- 		super(unPersonaje)
- 		personajes.remove(unPersonaje)
+ 	override method problemaCon(alguien){
+ 		super(alguien)
+ 		if(self.esDe(alguien))
+ 			personajes.remove(alguien)
  	}
  }
  
