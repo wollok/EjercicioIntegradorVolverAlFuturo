@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Parcial 15-11-11
 Bundle-Vendor: My Company
 Bundle-Version: 1.0.0.qualifier
-Bundle-SymbolicName: Parcial 15-11-11; singleton:=true
+Bundle-SymbolicName: VolverAlFuturo; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: com.ibm.icu,
  org.eclipse.xtext,
