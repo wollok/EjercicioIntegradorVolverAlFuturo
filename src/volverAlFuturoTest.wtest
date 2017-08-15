@@ -4,56 +4,52 @@ import destino.*
 import deLorean.*
 import combustibles.*
 
-object fixture{
+describe "Tests Volver al futuro" {
 	const lentesDel85 = new Elemento("Lentes",1985)
 	const controlDel85 = new Elemento("Control Remoto",1985)
 	const einstein = new Elemento("Perro Llamado Albert Einstein",1980)
 	const recorteUTN = new Documentacion("Recorte de una revista de la UTN",2016,[])
 	const doc= new Personaje(71,180,[lentesDel85,controlDel85,einstein,recorteUTN] ,"Brown")
 	const jenny = new Personaje(26,150,[],"Parker")
-	
-	method lejanoOeste() = new Destino([])
-	method doc() = doc
-	method jenny() = jenny
+	const lejanoOeste = new Destino([])
 	
 	method deLoreanConDocJenny(combustible){
 		deLorean.subirPasajero(doc)
 		deLorean.subirPasajero(jenny)
 		deLorean.combustible(combustible)
-		return deLorean
 	}
-}
 
 test "Si el deLorean Con Doc y Jenn viajan con radiactividad, jenn mediria 149 cm y el doc 179 cm" {
 	
-	var deLorean = fixture.deLoreanConDocJenny(radiactividad)
-	deLorean.viajarA(fixture.lejanoOeste(),1885)
-	assert.equals(149,fixture.jenny().altura())
-	assert.equals(179,fixture.doc().altura())
+	self.deLoreanConDocJenny(radiactividad)
+	deLorean.viajarA(lejanoOeste,1885)
+	assert.equals(149,jenny.altura())
+	assert.equals(179,doc.altura())
 
 }
 
 test "Si el deLorean Con Doc y Jenn viajan con nafta, jenn tendria 31 años y el doc 61"{
 	
-	var deLorean = fixture.deLoreanConDocJenny(nafta)
-	deLorean.viajarA(fixture.lejanoOeste(),1885)
-	assert.equals(31,fixture.jenny().edad())
-	assert.equals(61,fixture.doc().edad())
+	self.deLoreanConDocJenny(nafta)
+	deLorean.viajarA(lejanoOeste,1885)
+	assert.equals(31,jenny.edad())
+	assert.equals(61,doc.edad())
 	
 }
 
 test "Si el deLorean Con Doc y Jenn viajan con electricidad, cuando intenta hacer que jenn pierda un objeto 
 	  lanza un error"{
 	
-	var deLorean = fixture.deLoreanConDocJenny(electricidad)
-	assert.throwsExceptionLike(new ExceptionSinElementos(), {deLorean.viajarA(fixture.lejanoOeste(),1885)})
+	self.deLoreanConDocJenny(electricidad)
+	assert.throwsExceptionLike(new ExceptionSinElementos(), {deLorean.viajarA(lejanoOeste,1885)})
 	
 }
 
 test "Si el deLorean Con Doc y Jenn viajan con basura, quedan igual"{
 	
-	var deLorean = fixture.deLoreanConDocJenny(basura)
-	deLorean.viajarA(fixture.lejanoOeste(),1885)
-	assert.equals(150,fixture.jenny().altura())
-	assert.equals(180,fixture.doc().altura())
+	self.deLoreanConDocJenny(basura)
+	deLorean.viajarA(lejanoOeste,1885)
+	assert.equals(150,jenny.altura())
+	assert.equals(180,doc.altura())
+}
 }
