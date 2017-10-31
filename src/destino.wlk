@@ -1,5 +1,5 @@
  class Destino{
- 	var personajes = []
+ 	const personajes = []
  	constructor(_personajes){
  		personajes =_personajes
  	}
