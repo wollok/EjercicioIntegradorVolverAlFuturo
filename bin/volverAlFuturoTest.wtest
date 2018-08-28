@@ -1,17 +1,14 @@
 import personajes.*
-import elementos.*
-import destino.*
 import deLorean.*
-import combustibles.*
 
 describe "Tests Volver al futuro" {
-	const lentesDel85 = new Elemento("Lentes",1985)
-	const controlDel85 = new Elemento("Control Remoto",1985)
-	const einstein = new Elemento("Perro Llamado Albert Einstein",1980)
-	const recorteUTN = new Documentacion("Recorte de una revista de la UTN",2016,[])
-	const doc= new Personaje(71,180,[lentesDel85,controlDel85,einstein,recorteUTN] ,"Brown")
-	const jenny = new Personaje(26,150,[],"Parker")
-	const lejanoOeste = new Destino([])
+	const lentesDel85 = new Elemento(descripcion = "Lentes",fecha = 1985)
+	const controlDel85 = new Elemento(descripcion = "Control Remoto",fecha = 1985)
+	const einstein = new Elemento(descripcion = "Perro Llamado Albert Einstein", fecha = 1980)
+	const recorteUTN = new Documentacion(descripcion = "Recorte de una revista de la UTN", fecha = 2016,personajes=[])
+	const doc= new Personaje(edad = 71, altura = 180, elementos = [lentesDel85,controlDel85,einstein,recorteUTN] ,apellido = "Brown")
+	const jenny = new Personaje(edad = 26, altura = 150, apellido = "Parker",elementos = [])
+	const lejanoOeste = new Destino(personajes = [])
 	
 	method deLoreanConDocJenny(combustible){
 		deLorean.subirPasajero(doc)
@@ -28,7 +25,7 @@ test "Si el deLorean Con Doc y Jenn viajan con radiactividad, jenn mediria 149 c
 
 }
 
-test "Si el deLorean Con Doc y Jenn viajan con nafta, jenn tendria 31 años y el doc 61"{
+test "Si el deLorean Con Doc y Jenn viajan con nafta, jenn tendria 31 aï¿½os y el doc 61"{
 	
 	self.deLoreanConDocJenny(nafta)
 	deLorean.viajarA(lejanoOeste,1885)
@@ -41,7 +38,7 @@ test "Si el deLorean Con Doc y Jenn viajan con electricidad, cuando intenta hace
 	  lanza un error"{
 	
 	self.deLoreanConDocJenny(electricidad)
-	assert.throwsExceptionLike(new ExceptionSinElementos(), {deLorean.viajarA(lejanoOeste,1885)})
+	assert.throwsExceptionLike(exceptionSinElementos, {deLorean.viajarA(lejanoOeste,1885)})
 	
 }
 

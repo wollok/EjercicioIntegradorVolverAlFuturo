@@ -1,17 +1,11 @@
+import deLorean.*
+
 class Personaje{
- 	var edad
- 	var altura 
+ 	var property edad
+ 	var property altura 
+ 	var property apellido
  	var elementos = []
- 	var apellido
- 	constructor(_edad,_altura,_elementos,_apellido){
- 		edad =_edad
- 		altura = _altura
- 		elementos = _elementos
- 		apellido = _apellido
- 	}
- 	method apellido() = apellido
- 	method altura() = altura
- 	method edad() = edad
+ 	
  	method esMayor(){
  		return edad > 50
  	}
@@ -46,7 +40,47 @@ class Personaje{
  	}
  }
  
+class Destino{
+ 	const personajes = []
+ 	method antepasadosDe(unPersonaje){
+ 		return personajes.filter{personaje => personaje.esAntepesadoDe(unPersonaje)}
+ 	}
+ }
+ 
 
-
+ class Elemento{
+ 	var descripcion
+ 	var property fecha
+ 	
+ 	method esDe(alguien) = false
+ 	
+ 	method esMasReciente(unaFecha){
+ 		return fecha < unaFecha
+ 	}
+ 	method problemaCon(alguien){
+ 		descripcion = "BTTF " + descripcion
+ 	}
+ }
+ 
+ class Documentacion inherits Elemento{
+ 	var personajes
+ 
+ 	override method esDe(alguien){
+ 		return personajes.contains(alguien)
+ 	}
+ 	override method problemaCon(alguien){
+ 		super(alguien)
+ 		if(self.esDe(alguien))
+ 			personajes.remove(alguien)
+ 	}
+ }
+ 
+ class Especial inherits Elemento{
+ 	var duenio
+ 
+ 	override method esDe(alguien){
+ 		return duenio == alguien
+ 	}
+ }
 
 
