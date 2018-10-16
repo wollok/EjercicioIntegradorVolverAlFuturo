@@ -11,14 +11,14 @@ De cada personaje conocemos características personales y elementos que llevan c
 
 Algunos de los personajes, por ejemplo, son:
 
-- Dr Emmett Brown (conocido como "Doc"): Tiene 71 años y mide 1,80. Lleva lentes de 1985, un control remoto fabricado en 1985, un perro llamado einstein de 1980, una foto de 1885 donde está él con un reloj, y un recorte de una revista de la UTN de diciembre de 2016 donde no aparece ningún personaje de la película. 
-- Marty Mcfly: Tiene 25 años y mide 1,70. Lleva una patineta voladora del 2015 de la que es el dueño  y una foto de 1985 donde está él y sus hermanos.
+- Dr Emmett Brown (conocido como "Doc"): Tiene 71 años y mide 1,80. Lleva lentes de 1985, un control remoto fabricado en 1985, un perro llamado einstein de 1980, una foto de 1885 donde está él con un reloj, y un recorte de una revista de la UNSAM de diciembre de 2016 donde no aparece ningún personaje de la película. 
+- Marty Mcfly: Tiene 25 años y mide 1,70. Lleva una patineta voladora del 2015 de la que es el dueño y una foto de 1985 donde está él y sus hermanos.
 - Jennifer Parker: Tiene 26 años y mide 1,50. En este momento no lleva nada.
 
 Se pide Modelar los personajes y permitir averiguar: 
 
 1. Si son mayores (Más de 50 años) . Método esMayor( )
-2. Si tiene algún elemento propio, por ejemplo una foto o cualquier otro documento en la que aparece o un elemento del que es dueño. Método tieneElementoPropio( )
+2. Si tiene algún elemento propio, por ejemplo una foto o cualquier otro documento en el que aparece, o un elemento del que es dueño. Método tieneElementoPropio( )
 
 ### Viajes
 Para viajar, los personajes deben estar subidos al DeLorean, activar el condensador de flujo, indicar la fecha de destino en el panel digital, y acelerar hasta llegar a la velocidad de 88 mph.
