@@ -20,7 +20,7 @@ Se pide Modelar los personajes y permitir averiguar:
 1. Si son mayores (Más de 50 años) . Método esMayor( )
 2. Si tiene algún elemento propio, por ejemplo una foto o cualquier otro documento en la que aparece o un elemento del que es dueño. Método tieneElementoPropio( )
 
-###Viajes
+### Viajes
 Para viajar, los personajes deben estar subidos al DeLorean, activar el condensador de flujo, indicar la fecha de destino en el panel digital, y acelerar hasta llegar a la velocidad de 88 mph.
 Los viajes se realizan en el vehículo favorito de todos, el DeLorean, que usa barras de plutonio como combustible, pero en ocasiones se puede reemplazar por otro y suceden cosas diferentes.
 
@@ -35,19 +35,19 @@ Se pide:
 2. Mediante otro métodos, permitir cambiar el combustible, subir y bajar personajes del vehículo.
 3. Hacer tests de al menos dos viajes 
 
-###Situaciones especiales 
-####Los antepasados
+### Situaciones especiales 
+#### Los antepasados
 
 Uno de los viajes, en el que van Doc y Marty en el DeLorean, tiene por destino el lejano oeste en el siglo XIX. Allí se encuentran con muchos personajes, entre quienes hay familiares de Marty.
 
 1. Se quiere averiguar quienes son todos los personajes del destino, que tengan el mismo apellido que un personaje indicado y que sean mayores. Implementar el método antepasadosDe(unPersonaje).
 
-####Fotos que se desvanecen
+#### Fotos que se desvanecen
 
 Cuando alguno de los viajeros viaja al pasado e interviene en la realidad del momento, puede generar cambios con consecuencias impensadas. Cuando eso sucede, las fotos y otros documentos del futuro se desvanecen o modifican. Por ejemplo, en una oportunidad, Marty altera la historia de sus padres y hace que tanto él como sus hermanos desaparezcan de la foto que llevaba. 
 
 1. Para los ocupantes actuales del DeLorean, dado un personaje y una fecha, hacer que dicho personaje desaparezca de todas las fotos u otros documentos futuras que tengan los viajeros y que todo elemento que sea del futuro agregue a su descripción el prefijo "BTTF". Implementar el método huboUnProblemaCon(unPersonaje,unaFecha)
 
-###Paradojas temporales
+### Paradojas temporales
 
 Una de las paradojas que puede suceder es que el viajero se encuentre consigo mismo en un futuro o pasado.  Por ejemplo, Jennifer se encuentra consigo misma en uno de los viajes. En la película, son la misma persona, pero en dos momentos diferentes de su vida, con distinta edad o altura. ¿Cómo se podría modelar en el paradigma de objetos? No implementarlo, simplemente explicarlo desde los conceptos.
