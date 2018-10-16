@@ -1,7 +1,8 @@
 # Volver al Futuro
 ## Ejercicio integrador
 ![](volverAlFuturo.jpg)
-**En esta ocasión el Dr. Emmett Brown nos contrató para realizar un sistema que lo ayude a mantener un registro de sus viajes en el tiempo. Como el doctor es conocido de algunos docentes de UTN, pide que el sistema sea hecho en objetos.**
+
+**En esta ocasión el Dr. Emmett Brown nos contrató para realizar un sistema que lo ayude a mantener un registro de sus viajes en el tiempo. Como el doctor es conocido de algunos docentes argentinos, pide que el sistema sea hecho en objetos.**
 
 Tenemos varios personajes que viajan en el tiempo. El objetivo principal es ver qué les va pasando a medida que avanza (?) el tiempo
 
@@ -11,7 +12,7 @@ De cada personaje conocemos características personales y elementos que llevan c
 
 Algunos de los personajes, por ejemplo, son:
 
-- Dr Emmett Brown (conocido como "Doc"): Tiene 71 años y mide 1,80. Lleva lentes de 1985, un control remoto fabricado en 1985, un perro llamado einstein de 1980, una foto de 1885 donde está él con un reloj, y un recorte de una revista de la UNSAM de diciembre de 2016 donde no aparece ningún personaje de la película. 
+- Dr Emmett Brown (conocido como "Doc"): Tiene 71 años y mide 1,80. Lleva lentes de 1985, un control remoto fabricado en 1985, un perro llamado einstein de 1980, una foto de 1885 donde está él con un reloj, y un recorte de una revista universitaria de diciembre de 2016 donde no aparece ningún personaje de la película. 
 - Marty Mcfly: Tiene 25 años y mide 1,70. Lleva una patineta voladora del 2015 de la que es el dueño y una foto de 1985 donde está él y sus hermanos.
 - Jennifer Parker: Tiene 26 años y mide 1,50. En este momento no lleva nada.
 
