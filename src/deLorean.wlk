@@ -1,10 +1,10 @@
-import personajes.*
+//import personajes.*
 
-object exceptionSinElementos inherits Exception {}
+class ExceptionSinElementos inherits Exception {}
  
 object deLorean{
  	var property combustible = nafta
- 	const pasajeros = []
+ 	const pasajeros = [] 
 
  	method subirPasajero(pasajero){
  		pasajeros.add(pasajero)
@@ -36,7 +36,7 @@ object nafta{
 object electricidad{
  	method efecto(persona){
  		if(persona.noTieneElementos()) 
- 			throw exceptionSinElementos
+ 			throw new ExceptionSinElementos()
  		persona.perderLoMasAntiguo()
  	}
  }

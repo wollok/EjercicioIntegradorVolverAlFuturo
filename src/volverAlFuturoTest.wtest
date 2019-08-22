@@ -38,7 +38,7 @@ test "Si el deLorean Con Doc y Jenn viajan con electricidad, cuando intenta hace
 	  lanza un error"{
 	
 	self.deLoreanConDocJenny(electricidad)
-	assert.throwsExceptionLike(exceptionSinElementos, {deLorean.viajarA(lejanoOeste,1885)})
+	assert.throwsExceptionLike(new ExceptionSinElementos(), {deLorean.viajarA(lejanoOeste,1885)})
 	
 }
 
