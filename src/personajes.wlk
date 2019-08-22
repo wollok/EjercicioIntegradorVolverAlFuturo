@@ -1,4 +1,4 @@
-//import deLorean.*
+import deLorean.*
 
 class Personaje{
  	var property edad

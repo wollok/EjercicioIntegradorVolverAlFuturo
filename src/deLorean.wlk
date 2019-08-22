@@ -1,4 +1,4 @@
-//import personajes.*
+import personajes.*
 
 class ExceptionSinElementos inherits Exception {}
  

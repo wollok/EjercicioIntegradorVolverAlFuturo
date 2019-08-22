@@ -25,7 +25,7 @@ test "Si el deLorean Con Doc y Jenn viajan con radiactividad, jenn mediria 149 c
 
 }
 
-test "Si el deLorean Con Doc y Jenn viajan con nafta, jenn tendria 31 a�os y el doc 61"{
+test "Si el deLorean Con Doc y Jenn viajan con nafta, jenn tendria 31 años y el doc 61"{
 	
 	self.deLoreanConDocJenny(nafta)
 	deLorean.viajarA(lejanoOeste,1885)
