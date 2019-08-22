@@ -1,4 +1,7 @@
 # Volver al Futuro
+ 
+[![Build Status](https://travis-ci.org/wollok/EjercicioIntegradorVolverAlFuturo.svg?branch=master)](https://travis-ci.org/wollok/EjercicioIntegradorVolverAlFuturo)
+
 ## Ejercicio integrador
 ![](volverAlFuturo.jpg)
 
