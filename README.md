@@ -1,9 +1,10 @@
 # Volver al Futuro
  
-[![Build Status](https://travis-ci.org/wollok/EjercicioIntegradorVolverAlFuturo.svg?branch=master)](https://travis-ci.org/wollok/EjercicioIntegradorVolverAlFuturo)
+[![build](https://github.com/wollok/EjercicioIntegradorVolverAlFuturo/actions/workflows/ci.yml/badge.svg)](https://github.com/wollok/EjercicioIntegradorVolverAlFuturo/actions/workflows/ci.yml)
 
 ## Ejercicio integrador
-![](volverAlFuturo.jpg)
+
+![Volver al futuro](volverAlFuturo.jpg)
 
 **En esta ocasión el Dr. Emmett Brown nos contrató para realizar un sistema que lo ayude a mantener un registro de sus viajes en el tiempo. Como el doctor es conocido de algunos docentes argentinos, pide que el sistema sea hecho en objetos.**
 
